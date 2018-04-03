@@ -31,6 +31,31 @@ two. We'll fix build errors before we merge, so you don't have to
 worry about passing all of the CI checks, but it might add an extra
 few days. The important part is submitting your change.
 
+## Development Environment
+
+This environment assumes you are using an OS X machine for development
+but these instructions can be modified for other OSes.
+
+Run `make setup-environment` OR follow the following instructions:
+
+### First time setup
+- Install [pyenv](https://github.com/pyenv/pyenv) using homebrew per the
+installation instructions at the above link.
+- Install [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+using homebrew via the above link.
+- Install the python prereqs: `brew install readline xz`
+- Make sure python is installed by running `pyenv install` from this
+repository. If this build fails check [here](https://github.com/pyenv/pyenv/wiki/Common-build-problems)
+for common fixes.
+- Setup your virtualenv: `pyenv virtualenv chef-web-docs` (the name is
+arbitrary but if everyone uses the same thing, we all know what we're
+talking about!)
+
+### Using your installation
+- Activate your virtualenv: `pyenv activate chef-web-docs`
+- Install your requirements, if needed: `pip install -r requirements.txt`
+- Make the docs! `make docs`
+
 ## The next fastest way
 
 If your change involves edits to multiple topics, or if you contribute

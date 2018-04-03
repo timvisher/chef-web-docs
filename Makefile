@@ -11,3 +11,15 @@ docs:
 
 clean:
 	@rm -rf $(BUILDDIR)
+
+setup-environment:
+	brew install pyenv
+	brew install pyenv-virtualenv
+	CFLAGS="-I$(shell xcrun --show-sdk-path)/usr/include" pyenv install
+	pyenv virtualenv chef-web-docs
+	pyenv rehash
+
+destroy-environment:
+	pyenv virtualenv-delete -f chef-web-docs
+	pyenv uninstall -f 2.7.14
+	pyenv rehash
