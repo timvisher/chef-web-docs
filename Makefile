@@ -26,4 +26,4 @@ destroy-environment:
 
 docker-build:
 	docker build . -t docsbuild
-	docker run -v ~/oc/code/opscode/chef-web-docs:/build_dir -it docsbuild:latest
+	docker run -v $(shell pwd):/build_dir -it docsbuild:latest

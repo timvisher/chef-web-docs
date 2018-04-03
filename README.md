@@ -56,6 +56,10 @@ talking about!)
 - Install your requirements, if needed: `pip install -r requirements.txt`
 - Make the docs! `make docs`
 
+## DOCKER DoCKER DOCKER
+- Install docker for mac
+- Run `make docker-build`
+
 ## The next fastest way
 
 If your change involves edits to multiple topics, or if you contribute
