@@ -23,3 +23,7 @@ destroy-environment:
 	pyenv virtualenv-delete -f chef-web-docs
 	pyenv uninstall -f 2.7.14
 	pyenv rehash
+
+docker-build:
+	docker build . -t docsbuild
+	docker run -v ~/oc/code/opscode/chef-web-docs:/build_dir -it docsbuild:latest
