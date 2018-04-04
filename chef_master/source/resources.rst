@@ -1,7 +1,7 @@
 *****************************************************
 Resources Reference
 *****************************************************
-`[edit on GitHub] <https://github.com/chef/chef-web-docs/blob/master/chef_master/source/resource_reference.rst>`__
+`[edit on GitHub] <https://github.com/chef/chef-web-docs/blob/master/chef_master/source/resources.rst>`__
 
 This reference describes each of the resources available to the Chef Client, including a list of actions, properties, and usage examples.
 

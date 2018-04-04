@@ -90,7 +90,7 @@ See these guides for additional information about resources:
      - Description
    * - `Common Properties </resource_common.html>`__
      - Provides a detailed list of the common properties that are available in all resources.
-   * - `Resource Reference </resource_reference.html>`_
+   * - `Resource Reference </resources.html>`_
      - A reference guide that lists both the common and individual options available to every resource that is bundled into Chef.
    * - `Custom Resources </custom_resources.html>`__
      - Shows you how to create your own Chef resources.
